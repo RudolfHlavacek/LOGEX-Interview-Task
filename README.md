@@ -8,8 +8,8 @@ Aplikace dokáže spočítat kolik záznamů má stejné číslo (XXX) a vypsat 
 Čísla budou seřazena od nejpočetnějšího zastoupení po nejméně početná. Přijmení budou seřazena podle abecedy.
 Počáteční číslo XXX nemůsí být zadáno 3 ciframy. Čísla "001","01","1" jsou brána jako totožná.
 
-Příklad:
 
+## Příklad:
 ### Vstup:
     020_Jan.Krutý
     21_Petr.Malý
