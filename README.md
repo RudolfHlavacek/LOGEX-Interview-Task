@@ -1,25 +1,24 @@
 # Interview Task for company LOGEX
 
-Vytvoøte konzolovou aplikaci.
+## VytvoÅ™te konzolovou aplikaci.
 
-Slovní popis:
+### SlovnÃ­ popis:
+Do vstupu pÅ™ijde libovolnÃ½ poÄet zÃ¡znamÅ¯ ve formÃ¡tu XXX_JmÃ©no.PÅ™ijmenÃ­ (napÅ™.: "121_Pavel.NovÃ¡k" nebo "1_Petr.OspalÃ½")
+Aplikace dokÃ¡Å¾e spoÄÃ­tat kolik zÃ¡znamÅ¯ mÃ¡ stejnÃ© ÄÃ­slo (XXX) a vypsat poÄet a vÅ¡echna pÅ™ijmenÃ­ do Å™Ã¡dku.
+ÄŒÃ­sla budou seÅ™azena od nejpoÄetnÄ›jÅ¡Ã­ho zastoupenÃ­ po nejmÃ©nÄ› poÄetnÃ¡. PÅ™ijmenÃ­ budou seÅ™azena podle abecedy.
+PoÄÃ¡teÄnÃ­ ÄÃ­slo XXX nemÅ¯sÃ­ bÃ½t zadÃ¡no 3 ciframy. ÄŒÃ­sla "001","01","1" jsou brÃ¡na jako totoÅ¾nÃ¡.
 
-Do vstupu pøijde libovolnı poèet záznamù ve formátu XXX_Jméno.Pøijmení (napø.: "121_Pavel.Novák" nebo "1_Petr.Ospalı")
-Aplikace dokáe spoèítat kolik záznamù má stejné èíslo (XXX) a vypsat poèet a všechna pøijmení do øádku.
-Èísla budou seøazena od nejpoèetnìjšího zastoupení po nejménì poèetná. Pøijmení budou seøazena podle abecedy.
-Poèáteèní èíslo XXX nemùsí bıt zadáno 3 ciframy. Èísla "001","01","1" jsou brána jako totoná.
+PÅ™Ã­klad:
 
-Pøíklad:
+### Vstup:
+    020_Jan.KrutÃ½
+    21_Petr.MalÃ½
+    021_Pavel.NovÃ¡k
+    514_Karel.OspalÃ½
 
-Vstup:
-020_Jan.Krutı
-21_Petr.Malı
-021_Pavel.Novák
-514_Karel.Ospalı
+### VÃ½stup:
+    021 2x: MalÃ½, NovÃ¡k
+    020 1x: KrutÃ½
+    514 1x: OspalÃ½
 
-Vıstup:
-021 2x: Malı, Novák
-020 1x: Krutı
-514 1x: Ospalı
-
-Odevzdání: Solution pro Microsoft Visual studio.
+OdevzdÃ¡nÃ­: Solution pro Microsoft Visual studio.
