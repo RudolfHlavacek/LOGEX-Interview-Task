@@ -12,42 +12,61 @@ namespace LOGEX_Interview_Task
         private string pattern;
         private Regex regex;
         private string record;
+        private bool valid;
 
-        public Record()
-        {
+        private int number;
+        private string last_name;
 
-        }
 
         public Record(string pattern)
         {
             this.pattern = pattern;
-            regex = new Regex(pattern);
+            this.regex = new Regex(pattern);
+            this.valid = false;
         }
 
-        //public Record(string redex, string record)
-        //{
-        //    this.redex = redex;
-        //    this.record = record;
-        //}
 
         public void ChangeRecord(string new_record)
         {
-            this.record = new_record;
+            record = new_record;
+            ParseRecord();
+        }
+
+        private void ParseRecord()
+        {
+            if (regex.IsMatch(record))
+            {
+                string[] rec_parts = record.Split('_', '.');
+                number = int.Parse(rec_parts[0]);
+                last_name = rec_parts[2];
+
+                valid = true;
+            }
+            else
+            {
+                valid = false;
+            }
         }
 
         public bool IsValid()
         {
-            return false;
+            return valid;
         }
 
         public int GetNumber()
         {
-            return -42;
+            if (valid)
+                return this.number;
+            else
+                return -42;
         }
 
         public string GetLastName()
         {
-            return "-42";
+            if (valid)
+                return this.last_name;
+            else
+                return "-42";
         }
     }
 }
