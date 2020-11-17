@@ -19,7 +19,7 @@ namespace LOGEX_Interview_Task
             employees.Add(input_strings);
 
             Console.WriteLine(employees.ToString());
-            
+
             Console.ReadKey();
         }
     }
