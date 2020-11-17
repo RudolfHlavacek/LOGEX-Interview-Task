@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace LOGEX_Interview_Task
 {
-    class Record
+    public class Record
     {
         private string pattern;
         private Regex regex;

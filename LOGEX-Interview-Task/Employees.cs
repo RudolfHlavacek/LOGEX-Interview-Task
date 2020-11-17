@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LOGEX_Interview_Task
 {
-    class Employees
+    public class Employees
     {
         private Dictionary<int, List<string>> records;
         private Record reg;
